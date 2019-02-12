@@ -1,16 +1,13 @@
 import React from "react";
-import {BrowserRouter as Router, Route, Link} from "react-router-dom";
-import Button from '@material-ui/core/Button';
+import {Route, Switch} from "react-router-dom";
 import About from '../components/views/About/About'
 import Portfolio from '../components/views/Portfolio/Portfolio'
 
 const appRouter = () => (
-    <Router>
-        <div>
-            <Route path='/about' component={About}/>
-            <Route path='/work' component={Portfolio}/>
-        </div>
-    </Router>
+        <Switch>
+            <Route exact path='/about' component={About}/>
+            <Route exact path='/work' component={Portfolio}/>
+        </Switch>
 )
 
 export default appRouter

@@ -1,0 +1,39 @@
+.global__button__mui {
+  &--primary {
+    background: white;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+.global__page__padding {
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.global__row__flex {
+  &__spaceBetween{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.global__icon-default{
+  svg{
+    width: 14px;
+    height: 14px;
+  }
+  width: 14px;
+  height: 14px;
+}
+
+.global__link{
+  text-decoration: none;
+  color: black;
+}
+
+.global__font__family{
+  font-family: sans-serif;
+}
